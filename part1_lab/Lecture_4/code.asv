@@ -1,0 +1,5 @@
+mu = [0, 0.03, 7];
+y_0 = [10, 2];
+for i = mu
+    [time, y_values] = ode45(@(time, y_value) ode_function(t, y, i),  [0,100], )
+end
